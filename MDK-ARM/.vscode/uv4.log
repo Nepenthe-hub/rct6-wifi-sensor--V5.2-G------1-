@@ -1,0 +1,33 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil_5\ARM\ARMCC\Bin'
+Build target 'rct6-wifi-sensor'
+compiling main.c...
+../Core/Src/main.c(117): warning:  #177-D: variable "cmd1"  was declared but never referenced
+  	char cmd1[200];
+../Core/Src/main.c(119): warning:  #177-D: variable "serial_number"  was declared but never referenced
+  	uint16_t serial_number=0;
+../Core/Src/main.c(120): warning:  #177-D: variable "hmi_brightness"  was declared but never referenced
+  	uint8_t hmi_brightness=0x64;
+../Core/Src/main.c(304): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  							Write_Buff(rx1.recvbuff,rx1.buff);
+../Core/Src/main.c(307): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  						else	Write_Buff(rx1.cbuff,rx1.buff);							
+../Core/Src/main.c(444): warning:  #111-D: statement is unreachable
+  		cnt_timer[1]++;
+../Core/Src/main.c(103): warning:  #177-D: variable "WIFI_MANUAL_CONNECT_ONLY"  was declared but never referenced
+  static const uint8_t WIFI_MANUAL_CONNECT_ONLY = 1;
+../Core/Src/main.c: 7 warnings, 0 errors
+compiling uart_hmi.c...
+..\Core\Src\uart_hmi.c(255): warning:  #870-D: invalid multibyte character sequence
+  					if(
+RINTTEST2) 
+rintf_U3("  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ»ï¿½È?!\r\n");
+..\Core\Src\uart_hmi.c(320): warning:  #870-D: invalid multibyte character sequence
+  		if(
+RINTTEST1) 
+rintf_U3("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´æ´?!\r\n");
+..\Core\Src\uart_hmi.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=16900 RO-data=464 RW-data=148 ZI-data=7068  
+FromELF: creating hex file...
+"rct6-wifi-sensor\rct6-wifi-sensor.axf" - 0 Error(s), 9 Warning(s).
+Build Time Elapsed:  00:00:01
